@@ -11,6 +11,8 @@ import App from './App'
 // 引入路由，可以使用路由跳转
 import router from './router'
 
+import store from './vuex/store'
+
 // vue的全局设置
 // productionTip设置为 false 以阻止 vue 在启动时生成生产提示。
 Vue.config.productionTip = false
@@ -20,6 +22,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app', // 绑定DOM节点
   router, // 使用路由
+  store, // 使用vuex
   components: { App }, // 组件
   template: '<App/>'
 })
