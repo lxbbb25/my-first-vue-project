@@ -3,6 +3,7 @@
     <h1>home</h1>
     <p>{{ msg }}</p>
     <h3>{{ $store.state.count }}</h3>
+    <h4>{{ $store.getters.getterCount }}</h4>
     <div>
       <button v-on:click.prevent="handleAddClick(10)">增加</button>
       <button @click="handleReduceClick(10)">减少</button>

@@ -30,8 +30,8 @@ const actions = {
 }
 
 const getters = {
-  getterCount(state, n = 0) {
-    return (state.count += n)
+  getterCount(state) {
+    return (state.count + 1);
   }
 }
 
