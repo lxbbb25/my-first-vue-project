@@ -10,7 +10,6 @@ import Vue from 'vue'
 import App from './App'
 // 引入路由，可以使用路由跳转
 import router from './router'
-
 import store from './vuex/store'
 
 // vue的全局设置
@@ -26,3 +25,17 @@ new Vue({
   components: { App }, // 组件
   template: '<App/>'
 })
+
+// var aaa = Vue.component('aaa',{
+//   template: '<div>aaa bbb</div>'
+// })
+//
+// new Vue({
+//   el: '#app', // 绑定DOM节点
+//   router, // 使用路由
+//   store, // 使用vuex
+//   components: { aaa }, // 组件
+//   template: '<aaa/>'
+// })
+
+
